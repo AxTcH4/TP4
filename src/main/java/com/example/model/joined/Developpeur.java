@@ -1,0 +1,30 @@
+package com.example.model.joined;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Developpeur extends Employe {
+
+    private String langage;
+
+    public Developpeur() {}
+
+    @Override
+    public String getRole() {
+        return "";
+    }
+
+    public Developpeur(String nom, String langage) {
+        super(nom);
+        this.langage = langage;
+    }
+
+    // getters et setters
+    public String getLangage() {
+        return langage;
+    }
+    public void setLangage(String langage) {
+        this.langage = langage;
+    }
+
+}
